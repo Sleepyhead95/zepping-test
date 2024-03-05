@@ -1,0 +1,30 @@
+export default function FormInput() {
+  return (
+    <>
+      <input
+        className="input"
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        placeholder="Nome"
+      />
+      <input
+        className="input"
+        type="text"
+        id="cognome"
+        name="cognome"
+        required
+        placeholder="Cognome"
+      />
+      <input
+        className="input"
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="E-mail"
+      />
+    </>
+  );
+}
