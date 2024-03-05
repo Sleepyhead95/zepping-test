@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import "./password.scss";
+import styles from "./password.module.scss";
 
 export default function Password() {
   const [passwordShow, setPasswordShow] = useState(false);
@@ -11,7 +11,7 @@ export default function Password() {
   return (
     <>
       <input
-        className="input"
+        className={styles.input}
         type={passwordShow ? "text" : "password"}
         id="password"
         name="password"
@@ -20,14 +20,14 @@ export default function Password() {
       />
       {passwordShow ? (
         <img
-          className="eye-icon"
+          className={styles.eye}
           src="/icons/opne_eye_icon.svg"
           alt="Hide password"
           onClick={togglePasswordVisibility}
         />
       ) : (
         <img
-          className="eye-icon"
+          className={styles.eye}
           src="/icons/crossed_eye_icon.svg"
           alt="Show password"
           onClick={togglePasswordVisibility}

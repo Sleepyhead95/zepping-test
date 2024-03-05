@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.input {
+  width: 100%;
+  height: auto;
+  padding: 1.2rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  font-family: $cabin;
+  font-size: 1rem;
+  color: $secondary-text;
+  background-color: $boxes;
+  font-weight: 600;
+  margin: 0.2rem 0;
+
+}

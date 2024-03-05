@@ -1,8 +1,10 @@
+import styles from "./input.module.scss";
+
 export default function FormInput() {
   return (
     <>
       <input
-        className="input"
+        className={styles.input}
         type="text"
         id="nome"
         name="nome"
@@ -10,7 +12,7 @@ export default function FormInput() {
         placeholder="Nome"
       />
       <input
-        className="input"
+        className={styles.input}
         type="text"
         id="cognome"
         name="cognome"
@@ -18,7 +20,7 @@ export default function FormInput() {
         placeholder="Cognome"
       />
       <input
-        className="input"
+        className={styles.input}
         type="email"
         id="email"
         name="email"

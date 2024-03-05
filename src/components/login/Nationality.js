@@ -13,7 +13,7 @@ const customStyles = {
   control: (base, state) => ({
     ...base,
     border: 0,
-    width: "90%",
+    width: "90vw",
     height: "auto",
     padding: "1.1rem",
     backgroundColor: "#fff",
