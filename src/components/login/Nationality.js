@@ -15,7 +15,7 @@ const customStyles = {
     border: 0,
     width: "90vw",
     height: "auto",
-    padding: "1.1rem",
+    padding: "1rem",
     backgroundColor: "#fff",
     fontSize: "16px",
     fontFamily: "Cabin",
