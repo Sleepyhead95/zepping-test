@@ -85,15 +85,15 @@ const FlagOption = ({ innerProps, isDisabled, innerRef, data, options }) => {
   ) : null;
 };
 
-export default function Nationality() {
+export default function Nationality({ nationality, setNationality }) {
   const options = [
     { value: "italia", label: "Italia", flagUrl: "/icons/italy.svg" },
     { value: "francia", label: "Francia", flagUrl: "/icons/france.svg" },
     { value: "germania", label: "Germania", flagUrl: "/icons/germany.svg" },
   ];
 
-  const handleChange = (selectedOption) => {
-    console.log(`Option selected:`, selectedOption);
+  const handleChange = (e) => {
+    setNationality(e);
   };
 
   const CustomSingleValue = ({ children, ...props }) => {
@@ -149,6 +149,7 @@ export default function Nationality() {
         SingleValue: CustomSingleValue,
         DropdownIndicator: CustomDropdownIndicator,
       }}
+      value={nationality}
     />
   );
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./password.module.scss";
 
-export default function Password() {
+export default function Password({ password, setPassword }) {
   const [passwordShow, setPasswordShow] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -17,6 +17,8 @@ export default function Password() {
         name="password"
         required
         placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
       />
       {passwordShow ? (
         <img

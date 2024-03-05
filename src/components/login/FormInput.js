@@ -1,6 +1,13 @@
 import styles from "./input.module.scss";
 
-export default function FormInput() {
+export default function FormInput({
+  name,
+  setName,
+  surname,
+  setSurname,
+  email,
+  setEmail,
+}) {
   return (
     <>
       <input
@@ -10,6 +17,8 @@ export default function FormInput() {
         name="nome"
         required
         placeholder="Nome"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
       />
       <input
         className={styles.input}
@@ -18,6 +27,8 @@ export default function FormInput() {
         name="cognome"
         required
         placeholder="Cognome"
+        value={surname}
+        onChange={(e) => setSurname(e.target.value)}
       />
       <input
         className={styles.input}
@@ -26,6 +37,8 @@ export default function FormInput() {
         name="email"
         required
         placeholder="E-mail"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
       />
     </>
   );
