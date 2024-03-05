@@ -9,7 +9,7 @@ export default function Password() {
   };
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <input
         className={styles.input}
         type={passwordShow ? "text" : "password"}
@@ -33,6 +33,6 @@ export default function Password() {
           onClick={togglePasswordVisibility}
         />
       )}
-    </>
+    </div>
   );
 }

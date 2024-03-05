@@ -42,7 +42,7 @@ const customStyles = {
   }),
   menuList: (base) => ({
     ...base,
-    padding: "0.5rem 1rem",
+    padding: "0.7rem 1rem",
     width: "100%",
   }),
 

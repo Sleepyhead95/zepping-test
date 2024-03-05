@@ -1,9 +1,9 @@
-// import "./forgot_pass.scss";
+import styles from "./forgotPass.module.scss";
 
 export default function ForgotPass() {
   return (
-    <a className="password-redirect" href="/redirect">
-      <p className="forgot">Password dimenticata?</p>
+    <a className={styles.redirect} href="/redirect">
+      <p className={styles.p}>Password dimenticata?</p>
     </a>
   );
 }
