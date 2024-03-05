@@ -1,8 +1,5 @@
-
-import './App.scss';
+import "./App.scss";
 
 export default function App() {
-  return (
-    
-  );
+  return <p>hello</p>;
 }
